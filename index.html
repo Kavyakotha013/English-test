@@ -1,0 +1,127 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>English Test</h1>
+        <div>
+            <h2>Let's improve English</h2>
+        </div>
+    </header>
+    
+    <nav>
+        <a onclick="showSection('aboutUsSection')">Home</a>
+        <a onclick="showSection('registrationFormContainer')">Registration</a>
+        <a onclick="showSection('topicsContainer')">Topics</a>
+        <a onclick="showSection('userDetailsContainer')">User</a>
+        <a onclick="showSection('logoutContainer')">Logout</a>
+    </nav> 
+    <h2>Designing a test to check the intensity of grammar
+        for under graduate students
+        </h2>
+
+    <main>
+        <section id="aboutUsSection">
+            <h2>About Us</h2>
+            
+           <p>Welcome to English Test, your go-to platform for enhancing your English language skills. Our mission is to provide a user-friendly and effective environment for students and language enthusiasts to learn and practice English grammar.</p>
+    
+           <p>At English Test, we offer a variety of grammar topics, carefully curated to cover essential aspects of the English language. Whether you're a beginner looking to build a strong foundation or an advanced learner aiming for perfection, our platform has something for everyone.</p>
+    
+           <p>Our team of language experts is dedicated to creating high-quality content that makes learning enjoyable and rewarding. We believe in the power of education to transform lives, and we're here to support you on your language-learning journey.</p>
+
+           <p>Feel free to explore our topics, take tests, and track your progress. If you have any questions or suggestions, don't hesitate to reach out to us. Thank you for choosing English Test as your partner in mastering the English language!</p>
+           
+
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contactSection">
+        </section>
+        <!-- Registration Form --> 
+        <div class="container" id="registrationFormContainer">
+            <form onsubmit="return handleRegistration()">
+                <h4>Student Registration</h4>
+                <label for="newUsername">New Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+                <label for="newEmail">Email:</label>
+                <input type="email" id="newEmail" name="newEmail" required>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <input type="submit" value="Register">
+            </form>
+            <p id="registrationSuccessMessage">Successfully registered! Now you can choose the topic and take a test.</p>
+        </div>
+
+        <!-- Welcome Message --> 
+        <div class="container" id="welcomeContainer">
+            <h4>Welcome To English Test!</h4>
+            <p id="homeMessage">You are successfully registered or logged in. Now, select your required topic and take a test. All the best!</p>
+        </div>
+
+        <!-- Topics Column -->
+        <div class="container" id="topicsContainer">
+            <div class="topics-container">
+                <div class="topic-box" onclick="selectTopic('Parts of speech')">Parts of speech</div>
+                <div class="topic-box" onclick="selectTopic('Word Formation')">Word Formation</div>
+                <div class="topic-box" onclick="selectTopic('Tenses')">Tenses</div>
+                <div class="topic-box" onclick="selectTopic('Noun-Pronoun Agreement')">Noun-Pronoun Agreement</div>
+                <div class="topic-box" onclick="selectTopic('Antonym and Synonyms')">Antonym and Synonyms</div>
+
+                <!-- Add more topics as needed -->
+            </div>
+        </div>
+
+        <!-- User Details Column -->
+        <div class="container" id="userDetailsContainer">
+            <h3>User Details</h3>
+            <p id="userMessage">Not registered. Please register to access user details.</p>
+            <p id="userDetails"></p>
+        </div>
+
+        <!-- Logout Column -->
+        <div class="container" id="logoutContainer">
+            <h3>Logout</h3>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <!-- Test Section -->
+        <div class="container" id="testContainer" id="#timer">
+            <style>
+                #timer {
+                  color: blue;
+                  font-size: 30px;
+                  /* Add more styles as needed */
+                }
+              </style>
+            <body>
+                <div id="timer">Try to answer them within thirty seconds</div>
+              </body>
+            <div id="questionContainer"></div>
+            <br>
+            <button onclick="goBackToTopics()">Leave Test </button>
+        </div>
+
+        <!-- Score Section -->
+        <div class="container" id="scoreContainer">
+            <h2>Your Score</h2>
+            <p id="scoreMessage"></p>
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2023 English Test. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

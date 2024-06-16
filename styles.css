@@ -1,0 +1,354 @@
+
+.sub-topics {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sub-topics .sub-topic {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.sub-topics .sub-topic:hover {
+    background-color: #ddd;
+}
+
+/* Additional styles for button centering */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    margin: 0 10px;
+}
+
+/* New styles for the main topic container */
+.topic-container {
+    flex: 1;
+    background-color: #6d7272;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1 0 10px rgba(7, 8, 10, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* New styles for the main topic heading */
+.topic-heading {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Update existing styles for better readability */
+#registrationSuccessMessage {
+    color: #000;
+    display: none;
+}
+
+/* Styles for the logout button */
+#logoutContainer button {
+    background-color: #70221a;
+    color: #fff;
+}
+
+/* Update the container style for better visibility */
+.container {
+    flex: 1;
+    background-color: #6d7272;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #2c3e50;  /* Dark text color */
+    background-color: #ecf0f1;  /* Light background color */
+}
+
+header, nav, footer {
+    background-color: #3498db;  /* Blue header and footer background color */
+    color: #fff;  /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;  /* White link color */
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #2c3e50;  /* Darker color on hover */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+.container {
+    flex: 1;
+    background-color: #fff;  /* White container background color */
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Light shadow */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Center the welcome message */
+#welcomeContainer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.topics-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.topic-box {
+    background-color: #3498db;  /* Blue topic box background color */
+    color: #fff;  /* White text color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Smooth background color transition */
+}
+
+.topic-box:hover {
+    background-color: #2980b9;  /* Darker blue on hover */
+}
+
+#userDetailsContainer {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#registrationSuccessMessage {
+    color: #27ae60;  /* Green success message color */
+    display: none;
+}
+
+#logoutContainer button {
+    background-color: #e74c3c;  /* Red logout button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Smooth background color transition */
+}
+
+#logoutContainer button:hover {
+    background-color: #c0392b;  /* Darker red on hover */
+}
+
+/* Add this CSS for button centering */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    margin: 0 10px;
+}
+
+/* Add this to your existing styles or create a new section for sub-topics */
+.sub-topics {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sub-topics .sub-topic {
+    background-color: #ecf0f1;  /* Light sub-topic background color */
+    color: #2c3e50;  /* Dark sub-topic text color */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Smooth background color transition */
+}
+
+.sub-topics .sub-topic:hover {
+    background-color: #d0d3d4;  /* Darker background color on hover */
+}
+.h1:hover {
+    background-color: #2980b9;  /* Darker blue on hover */
+}
+/* quiz.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.container button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #45a049;
+}
+
+/* Add more styles as needed */
+.timer {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+/* Existing styles... */
+
+/* New styles for the main topic container */
+.topic-container {
+    flex: 1;
+    background-color: #6d7272;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1 0 10px rgba(7, 8, 10, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* New styles for the main topic heading */
+.topic-heading {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Additional styles for button centering */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons-container button {
+    margin: 0 10px;
+}
+
+/* Add this to your existing styles or create a new section for sub-topics */
+.sub-topics {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sub-topics .sub-topic {
+    background-color: #ecf0f1;  /* Light sub-topic background color */
+    color: #2c3e50;  /* Dark sub-topic text color */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Smooth background color transition */
+}
+
+.sub-topics .sub-topic:hover {
+    background-color: #d0d3d4;  /* Darker background color on hover */
+}
+
+/* Additional styles for the timer display */
+#timer {
+    font-size: 18px;
+    color: #080225;  /* Dark text color */
+    margin-bottom: 90px;
+}
